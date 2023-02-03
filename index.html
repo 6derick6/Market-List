@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header{
+                background-color: #d10000;
+                text-align: center; 
+                color: white;
+                padding: 30px 0;   
+            }
+
+            .lista-cadastro{
+                display: flex;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+
+            .lista-cadastro input[type=text]{
+                flex: 1;
+                height: 50px;
+                padding-left: 20px;
+                border-radius: 30px;
+                margin-left: 10%;
+            }
+
+            .lista-cadastro input[type=number]{
+                flex: 1;
+                height: 50px;
+                padding-left: 20px;
+                border-radius: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .lista-cadastro input[type=submit]{
+                margin-right: 10%;
+                border-radius: 30px;
+                width: 100px;
+            }
+
+            .lista-produtos-single{
+                padding: 10px 0;
+                margin: 20px 0;
+                border-bottom:1px solid #ccc;
+                display: flex;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            .lista-produtos-single h3{
+                flex: 1;
+                padding: 0 20px;
+            }
+
+            h3.price-produto{
+                text-align: right;
+                font-size: 17px;
+            }
+
+            h3.price-produto > span{
+                background-color: #238a03;
+                padding: 8px 10px;
+                border-radius: 20px;
+                color: white;
+            }
+
+            .soma-produto{
+                display: flex;
+                margin: 20px;
+                justify-content: space-between;
+                margin-right: 10%;
+            }
+
+            .soma-produto h1{
+                margin-left: 10%;
+            }
+
+            #limpar{
+                border-radius: 30px;
+                width: 140px;
+                height: 45px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Lista de Supermercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="Nome do Produto" 
+            name="nome_produto" /> 
+            <input type="number" name="price" step="0.01" 
+            placeholder="Valor do Produto"
+            title="This should be a number with up to 2 decimal" />
+            <input type="submit" name="acao" value="Cadastrar" />
+        </div>
+
+        <div class="lista-produtos">
+            
+           
+        </div>
+
+        <div class="soma-produto">
+            <h1>Total: R$0</h1>
+            <button id="limpar" name="limpar">Limpar Carrinho</button>
+        </div>
+
+        <script src="supermercado.js">
+            
+        </script>
+    </body>
+</html>
